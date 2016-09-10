@@ -9,7 +9,7 @@ function P2PoolDonationButton(parameters) {
     this.id = '#' + parameters.id;
     this.uid = Math.floor((Math.random() * 2e9));
     this.create = function () {
-        if ($(this.id + " #" + this.uid + ".P2PoolDonationButton-container").length > 0) return;
+        if ($(this.id + " #p2pdb-c-" + this.uid + ".P2PoolDonationButton-container").length > 0) return;
         var hidefunc = function (e) {
             var shadow = $(e.target), s = ".P2PoolDonationButton-balloon-shadow", c = "P2PoolDonationButton-show";
             if (shadow.is(s)) shadow.removeClass(c);
